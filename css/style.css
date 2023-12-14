@@ -3,3 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    height: 100vh;
+    background: linear-gradient(#009788 150px, #DADBD5 150px, #DADBD5 1000px);
+}
+
+.central{
+    width: 90%;
+    height: 900px;
+    background-color: red;
+}
+
