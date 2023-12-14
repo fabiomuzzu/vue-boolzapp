@@ -40,3 +40,8 @@ img{
 .r_border{
     border-right: 1px solid gray;
 }
+
+.msg_section{
+    height: calc(100% - 70px);
+    background-image: url(../img/mine.jpg);
+}
