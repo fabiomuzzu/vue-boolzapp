@@ -53,3 +53,19 @@ img{
 .my_flex{
     display: flex;
 }
+
+.msg{
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.msg-pc{
+    background-color: #fff;
+    margin-left: 20px;
+}
+
+.msg-user{
+    background-color: #D5F9BB;
+    margin-right: 20px;
+}

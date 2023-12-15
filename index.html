@@ -95,9 +95,11 @@
                             <!-- Sezione messaggi -->
                             <div class="msg_section">
                                 <div class="col-12">
-                                    <div v-for="(item, index) in contacts[user].messages" :key="index">
-                                        <div class="position-relative" :class="item.status == 'sent' ? 'msg-user float-end' : 'msg-pc float-start'">
-                                            <span>{{item.message}}</span>            
+                                    <div class="d-flex flex-column">
+                                        <div v-for="(item, index) in contacts[user].messages" :key="index">
+                                            <div class="msg position-relative" :class="item.status == 'sent' ? 'msg-user float-end' : 'msg-pc float-start'">
+                                                <span>{{item.message}}</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>  
