@@ -41,7 +41,15 @@ img{
     border-right: 1px solid gray;
 }
 
+.b_border{
+    border-bottom: 1px solid gray;
+}
+
 .msg_section{
     height: calc(100% - 70px);
     background-image: url(../img/mine.jpg);
+}
+
+.my_flex{
+    display: flex;
 }
