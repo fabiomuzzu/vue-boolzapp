@@ -170,6 +170,8 @@ createApp({
     }
   },
   methods: {
-    
+    switchUser(index){
+      this.user = index;
+    },
   },
 }).mount('#app')
