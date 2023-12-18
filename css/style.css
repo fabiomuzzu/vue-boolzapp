@@ -74,10 +74,24 @@ img{
     background-color: lightgray;
 }
 
+.bg_lightgray2{
+    background-color: rgb(236, 236, 236);
+}
+
 ol, ul {
     margin-bottom: 0;
 }
 
 .hr_content span{
     margin-left: 10px;
+}
+
+#bell{
+    border-radius: 50%;
+    background-color: white;
+    padding: 15px;
+}
+
+.notify a{
+    margin-left: 65px;
 }
