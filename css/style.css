@@ -46,7 +46,7 @@ img{
 }
 
 .msg_section{
-    height: calc(100% - 70px);
+    height: calc(100% - 106px);
     background-image: url(../img/mine.jpg);
 }
 

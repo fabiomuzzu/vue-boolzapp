@@ -3,6 +3,7 @@ const { createApp } = Vue
 createApp({
   data() {
     return {
+      newMsg: '',
       user: 0,
       contacts: [
         {
@@ -172,6 +173,25 @@ createApp({
   methods: {
     switchUser(index){
       this.user = index;
+    },
+    sendMsg(){
+      let obj = {
+          message: this.newMsg,
+          status: 'sent'
+      };
+
+      if (obj.message.length > 0) {
+          this.contacts[this.user].messages.push(obj);
+          this.newMsg = '';
+          setTimeout(() => {
+              let obj = {
+                  message: 'ok',
+                  status: 'received'
+              };
+  
+              this.contacts[this.user].messages.push(obj);  
+          }, 1000);   
+      }
     },
   },
 }).mount('#app')
