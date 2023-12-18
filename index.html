@@ -26,7 +26,7 @@
                                         <div class="avatar_container">
                                             <img src="./img/avatar_io.jpg" alt="">
                                         </div>
-                                        <p class="mx-2">Sofia</p>
+                                        <span>Sofia</span>
                                     </div>
                                     <div class="icon_container">
                                         <ul class="list-unstyled d-flex flex-row">
@@ -53,7 +53,7 @@
                                     <span class="input-group-text border-0 pointer">
                                         <i class="fa-solid fa-magnifying-glass"></i>
                                     </span>
-                                    <input type="text" class="form-control border-0" placeholder="Cerca o inizia una nuova chat">
+                                    <input type="text" class="form-control border-0" placeholder="Cerca o inizia una nuova chat" v-model="search" @keyup="searchUser">
                                 </div>
                             </div>
 
@@ -80,7 +80,7 @@
                                         <div class="avatar_container">
                                             <img src="./img/avatar_1.jpg" alt="">
                                         </div>
-                                        <p class="mx-2">Michele</p>
+                                        <span>Michele</span>
                                     </div>
                                     <div class="icon_container">
                                         <ul class="list-unstyled d-flex flex-row">
@@ -113,7 +113,7 @@
                                     <span><i class="fa-solid fa-microphone px-3"></i></span>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>

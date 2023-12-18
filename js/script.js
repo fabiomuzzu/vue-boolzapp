@@ -3,6 +3,7 @@ const { createApp } = Vue
 createApp({
   data() {
     return {
+      search: '',
       newMsg: '',
       user: 0,
       contacts: [
@@ -174,6 +175,7 @@ createApp({
     switchUser(index){
       this.user = index;
     },
+
     sendMsg(){
       let obj = {
           message: this.newMsg,
@@ -192,6 +194,17 @@ createApp({
               this.contacts[this.user].messages.push(obj);  
           }, 1000);   
       }
+    },
+
+    searchUser(){
+      this.contacts.forEach((element) => {
+          if(element.name.toLowerCase().includes(this.search.toLowerCase())){
+              element.visible = true;
+          }
+          else{
+              element.visible = false;
+          }
+      });
     },
   },
 }).mount('#app')

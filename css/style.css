@@ -73,3 +73,11 @@ img{
 .bg_lightgray{
     background-color: lightgray;
 }
+
+ol, ul {
+    margin-bottom: 0;
+}
+
+.hr_content span{
+    margin-left: 10px;
+}
