@@ -39,11 +39,13 @@
                             </div>
 
                             <!-- Sezione notifiche -->
-                            <div class="p-3 bg-info">
-                                <i class="bell fa-solid fa-bell-slash float-start mx-2 text-info" id="bell"></i>
-                                <div class="notify">
-                                    <h6>Ricevi notifiche di nuovi messaggi</h6>
-                                    <a href="">Attiva notifiche web</a>
+                            <div class="col-12">
+                                <div class="p-3 bg-info">
+                                    <i class="bell fa-solid fa-bell-slash float-start mx-2 text-info" id="bell"></i>
+                                    <div class="notify">
+                                        <h6 class="mb-0 fw-semibold">Ricevi notifiche di nuovi messaggi</h6>
+                                        <a href="">Attiva notifiche web</a>
+                                    </div>
                                 </div>
                             </div>
 
@@ -64,7 +66,7 @@
                                         <div class="avatar_container">
                                             <img :src="chat.avatar" alt="">
                                         </div>
-                                        <div class="fw-bolder mx-2">{{chat.name}}</div>
+                                        <div class="fw-semibold mx-2">{{chat.name}}</div>
                                     </div>
                                 </div>
                             </div>
